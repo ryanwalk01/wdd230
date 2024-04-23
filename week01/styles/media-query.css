@@ -1,0 +1,22 @@
+body {
+    font-family: Roberto;
+}
+
+header, main, footer {
+    max-width: 640;
+    margin: 1rem auto;
+    border: 1px solid grey;
+    padding: 1rem;
+    background-color: #84d3f8;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: white;
+}
