@@ -1,0 +1,56 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    
+}
+
+header {
+    background-color: #0077B6;
+    color: white;
+    padding: 1rem;
+}
+
+main {
+    margin: 0 20px;
+    padding: 20px;
+}
+
+section {
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr 1fr;
+}
+
+section h2 {
+    margin-bottom: 0px;
+}
+
+#box1 {
+    grid-column: 1;
+}
+
+#box2 {
+    grid-column: 2;
+}
+
+#box3 {
+    grid-column: 3;
+}
+
+#color1 {
+    background-color: #0077B6;
+    width: 40%;
+    height: 70px;
+}
+
+#color2 {
+    background-color: #90E0EF;
+    width: 40%;
+    height: 70px;
+}
+
+#color3 {
+    background-color: #CAF0F8;
+    width: 40%;
+    height: 70px;
+}
+
