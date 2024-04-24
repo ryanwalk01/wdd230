@@ -28,16 +28,14 @@ header {
     color: white;
     padding: 10px;
     text-align: center;
-}
-
-header img {
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header span {
-    display: block;
-    margin-top: 5px;
+    font-size: xx-large;
+    padding: 10px;
 }
 
 nav {
