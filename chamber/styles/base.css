@@ -1,0 +1,160 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #0077B6;
+    color: white;
+}
+
+header img {
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#menu {
+    font-size: 2.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    font-size: 2rem;
+    content: "❌";
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #00badb;
+    color: white;
+}
+
+.nav a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    background-color: #039fbb;
+    font-weight: bolder;
+}
+
+.open a {
+    display: block;
+}
+
+.active {
+    font-weight: bold;
+}
+
+#hero {
+    position: relative;
+    text-align: center;
+    color: white
+}
+
+#hero img {
+    width: 100%;
+    filter: blur(3px) brightness(60%);
+}
+
+#hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 1rem;
+}
+
+#weather {
+    grid-column: 2;
+}
+
+#cta {
+    text-align: center;
+    background-color: #00badb;
+    width: 30dvh;
+}
+
+#cta h2 {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form input {
+    padding: 5px;
+}
+
+.name {
+    width: 130px;
+}
+
+#email {
+    width: 220px;
+}
+
+.form button {
+    margin: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: #039fbb;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #058399;
+}
+
+footer {
+    background-color: #0077B6;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    padding-left: 1rem;
+}
+
+#copyright {
+    grid-column: 2;
+    padding: 3rem;
+    text-align: center;
+}
+
+#project {
+    grid-column: 3;
+    padding: 1rem;
+    text-align: right;
+}

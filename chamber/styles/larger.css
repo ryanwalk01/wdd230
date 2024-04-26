@@ -1,0 +1,25 @@
+@media screen and (min-width: 800px) {
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        background-color: #00badb;
+        color: white;
+        margin-left: 20px;
+    }
+
+    .nav a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        width: 70px;
+    }
+}
