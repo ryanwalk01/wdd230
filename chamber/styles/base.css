@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: #0077B6;
+    background-color: #005582;
     color: white;
 }
 
@@ -37,7 +37,8 @@ header img {
     display: flex;
     flex-direction: column;
     list-style: none;
-    background-color: #00badb;
+    background-color: #005582;
+    font-weight: bold;
     color: white;
 }
 
@@ -50,7 +51,7 @@ header img {
 }
 
 .nav a:hover {
-    background-color: #039fbb;
+    background-color: #005c72;
     font-weight: bolder;
 }
 
@@ -59,7 +60,7 @@ header img {
 }
 
 .active {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 #hero {
@@ -84,19 +85,14 @@ header img {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
     margin: 1rem;
 }
 
-#weather {
-    grid-column: 2;
-}
-
 #cta {
     text-align: center;
-    background-color: #00badb;
+    background-color: #005582;
+    color: white;
     width: 30dvh;
 }
 
@@ -128,9 +124,10 @@ main {
     margin: 20px;
     width: 100px;
     height: 40px;
-    background-color: #039fbb;
+    background-color: #006176;
+    border: none;
+    border-radius: 10px;
     color: white;
-    border-style: none;
     cursor: pointer;
 }
 
@@ -139,7 +136,7 @@ main {
 }
 
 footer {
-    background-color: #0077B6;
+    background-color: #005582;
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

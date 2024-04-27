@@ -1,4 +1,4 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
     #menu {
         display: none;
     }
@@ -11,7 +11,6 @@
     .nav {
         display: flex;
         flex-direction: row;
-        background-color: #00badb;
         color: white;
         margin-left: 20px;
     }
@@ -21,5 +20,14 @@
         text-decoration: none;
         color: white;
         width: 70px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #weather {
+        grid-column: 2;
     }
 }
