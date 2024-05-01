@@ -37,7 +37,7 @@ function displayList(item) {
 }
 
 function setChapterList(chaptersArray) {
-    localStorage.setItem('#list'), JSON.stringify(chaptersArray); 
+    localStorage.setItem('list', JSON.stringify(chaptersArray));
 }
 
 function getChapterList() {
