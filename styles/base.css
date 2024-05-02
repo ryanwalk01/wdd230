@@ -38,12 +38,33 @@ header span {
     padding: 10px;
 }
 
+#menu {
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.open {
+    display: flex;
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+#menu::before {
+    content: "\2630";
+}
+
 nav {
+    display: none;
     background-color: #444444;
     color: white;
     padding: 10px;
     text-align: center;
-    display: flex;
     flex-direction: column;
 }
 
@@ -59,4 +80,28 @@ footer {
     padding: 20px;
     text-align: center;
     margin-top: 20px;
+}
+
+#dark {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+#dark::before {
+    content: "🌑";
+}
+
+#dark.dark::before {
+    content: "☀️";
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.card.dark {
+    background-color: rgb(32, 32, 32);
+    color: white;
 }
