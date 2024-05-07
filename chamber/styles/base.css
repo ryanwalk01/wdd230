@@ -81,7 +81,7 @@ header img {
     transform: translate(-50%, -50%);
     color: white;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 main {
@@ -116,7 +116,7 @@ main {
     width: 130px;
 }
 
-#email {
+#emailaddress {
     width: 220px;
 }
 
@@ -146,7 +146,7 @@ footer {
 
 #copyright {
     grid-column: 2;
-    padding: 3rem;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -184,4 +184,89 @@ footer {
 
 .photos p {
     margin-top: 5px;
+}
+
+/* Join page */
+.join {
+    grid-column: 1;
+    padding: 20px;
+    background-color: #005582;
+    border-radius: 15px;
+    color: white;
+    max-width: 500px;
+    margin: auto;
+    width: 90%;
+}
+
+.join fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem;
+}
+
+.join fieldset:last-of-type {
+    margin-bottom: 10px;
+}
+
+.join legend {
+    padding: 0 .5rem
+}
+
+.join label {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.join div {
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+.join input[type="text"],
+.join input[type="email"],
+.join input[type="tel"] {
+    background-color: white;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 90%;
+    appearance: none;
+}
+
+.join input[type="radio"] {
+    margin-right: 6px;
+}
+
+.join input[type="submit"] {
+    border: none;
+    background-color: #006176;
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 90%;
+    max-width: 400px;
+}
+
+#submit {
+    text-align: center;
+}
+
+.join input[type="submit"]:hover {
+    background-color: #058399;
+}
+
+.join input:required {
+    border-right: solid 8px red;
+}
+
+.join input:required:valid {
+    border-right: solid 8px green;
+}
+
+table {
+    display: none;
 }

@@ -30,4 +30,47 @@
     #weather {
         grid-column: 2;
     }
+
+    table {
+        display: table;
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+
+    caption {
+        padding: 10px;
+        caption-side: bottom;
+        font-size: 12px;
+    }
+
+    tr:first-child th {
+        background-color: #005582;
+        color: white;
+        border-bottom: none;
+    }
+
+    th, td {
+        padding: 5px 10px;
+        border: 1px solid black;
+    }
+
+    th {
+        background-color: #014164;
+        color: white;
+        font-size: larger;
+
+    }
+
+    th:first-child {
+        background-color: #005582;
+        border-top: none;
+    }
+
+    td {
+        text-align: center;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: lightgrey;
+    }
 }
