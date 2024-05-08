@@ -31,6 +31,11 @@
         grid-column: 2;
     }
 
+    #discover {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
     table {
         display: table;
         margin: 20px auto;
@@ -49,7 +54,8 @@
         border-bottom: none;
     }
 
-    th, td {
+    th,
+    td {
         padding: 5px 10px;
         border: 1px solid black;
     }
