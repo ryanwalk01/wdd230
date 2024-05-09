@@ -74,6 +74,22 @@ nav a {
     margin: 5px;
 }
 
+#overlay {
+    position: absolute;
+    top: 15rem;
+    left: 1rem;
+    font-size: 1rem;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+    width: 20rem;
+}
+
+#temple_hero img {
+    width: 100%;
+    height: 100%;
+}
+
 footer {
     background-color: #333;
     color: white;

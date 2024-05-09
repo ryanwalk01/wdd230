@@ -17,11 +17,13 @@
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Ryan Walker - WDD 230 - Web Frontend Development" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1495660611116-fdd372baad4d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1495660611116-fdd372baad4d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
     <meta property="og:url" content="https://ryanwalk01.github.io/wdd230/" />
     <meta property="twitter:title" content="Ryan Walker - WDD 230 - Web Frontend Development" />
     <meta property="twitter:type" content="website" />
-    <meta property="twitter:image" content="https://images.unsplash.com/photo-1495660611116-fdd372baad4d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    <meta property="twitter:image"
+        content="https://images.unsplash.com/photo-1495660611116-fdd372baad4d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
     <meta property="twitter:url" content="https://ryanwalk01.github.io/wdd230/" />
 
 </head>
@@ -39,6 +41,11 @@
         <a href="">Form</a>
     </nav>
     <main>
+        <div id="overlay"><h1>Rexburg, ID Temple</h1></div>
+        <picture id="temple_hero">
+            <source media="(max-width: 400px)" srcset="week03/images/hero-medium.webp">
+            <img src="week03/images/hero-large.webp" alt="Rexburg, ID Temple" width="960" height="480">
+        </picture>
         <h1>WDD 230:Web Frontend Development</h1>
         <section class="card">
             <h2>Learning Activities</h2>
@@ -51,7 +58,8 @@
                 <li><a href="week03/lazyload.html">lazyload.html</a></li>
                 <li><a href="week03/responsive-images.html">responsive-images.html</a></li>
                 <li><a href="week03/bom.html">bom.html</a> (Week 3)</li>
-                <li>Week 04: <a href="https://codepen.io/Ryan-Walker-the-bold/pen/xxNKrJb">CodePen Pseudo-Classes</a></li>
+                <li>Week 04: <a href="https://codepen.io/Ryan-Walker-the-bold/pen/xxNKrJb">CodePen Pseudo-Classes</a>
+                </li>
                 <li>Week 04: <a href="week04/images/combinators.png">combinators_image</a></li>
                 <li>Week 04: <a href="week04/tablebuild.html">tablebuild.html</a></li>
                 <li>Week 04: <a href="week04/webforms.html">webforms.html</a></li>
@@ -60,9 +68,14 @@
         <section class="card">
             <h2>information</h2>
             <p>Weather</p>
-            <p>Number of visits</p>
+            <p>Number of visits:</p>
+            <div id="visits"></div>
             <p>etc.</p>
         </section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98860.68281370231!2d-81.541574!3d39.25657305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88484c7b32de2457%3A0xce93e42c0c21949a!2sParkersburg%2C%20WV!5e0!3m2!1sen!2sus!4v1715276974093!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <p>&copy;<span id="year"></span> Ryan Walker USA</p>
@@ -70,6 +83,7 @@
         <button id="dark" type="button" aria-label="dark mode button"></button>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/visits.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/dark.js"></script>
 </body>
