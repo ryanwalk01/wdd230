@@ -1,0 +1,30 @@
+body {
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    color: teal;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center;
+    padding: 1rem;
+    border-style: solid;
+    border-color: teal;
+    background-color: rgb(1, 167, 167);
+    border-width: 1rem;
+    box-shadow: 0 0 50px teal;
+    grid-gap: 5px;
+}
+
+section {
+    border-style: solid;
+    padding: 3rem;
+    padding-top: 1rem;
+    text-align: center;
+    color: rgb(2, 68, 68);
+    background-color: rgb(122, 236, 236);
+}

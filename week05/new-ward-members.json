@@ -1,0 +1,33 @@
+{
+    "familyName": "The Walker Family",
+    "moveInDate": "6/14/1992",
+    "numberOfRecords": 5,
+    "bishopicVisited": true,
+    "familyMembers": [
+        {
+            "name": "Troy Walker",
+            "gender": "male",
+            "birthdate": "8/5/67"
+        },
+        {
+            "name": "Kristin Walker",
+            "gender": "female",
+            "birthdate": "4/2/67"
+        },
+        {
+            "name": "Shaelynn Walker",
+            "gender": "female",
+            "birthdate": "7/26/95"
+        },
+        {
+            "name": "Brittany Walker",
+            "gender": "female",
+            "birthdate": "12/20/96"
+        },
+        {
+            "name": "Ryan Walker",
+            "gender": "male",
+            "birthdate": "3/12/20"
+        }
+    ]
+}
