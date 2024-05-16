@@ -271,3 +271,76 @@ footer {
 table {
     display: none;
 }
+
+/* Directory Page */
+#grid_toggle button {
+    margin: 5px 20px;
+    width: 120px;
+    height: 60px;
+    background-color: #006176;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+#grid_toggle button:hover {
+    background-color: #058399;
+}
+
+.grid {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    justify-items: center;
+    padding: 1rem;
+    border-style: solid;
+    border-color: #005c72;
+    background-color: #005582;
+    border-width: 1rem;
+    grid-gap: 5px;
+}
+
+.grid section {
+    border-style: solid;
+    padding: 3rem;
+    padding-top: 1rem;
+    text-align: center;
+    color: white;
+    background-color: #005c72;
+}
+
+.grid p {
+    font-size: 13px;
+}
+
+#grid_toggle {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.list {
+    grid-column: 1/-1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0;
+}
+
+.list p {
+    margin: 0.5rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section:nth-child(even) {
+    background-color: #005582;
+    color: white;
+}

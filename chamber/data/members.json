@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Green Valley Landscaping",
+            "address": "123 Main Street, Parkersburg, WV",
+            "phone": "(304) 555-1234",
+            "website": "www.greenvalleylandscapingwv.com",
+            "logo": "green_landscape",
+            "membership": "Silver",
+            "hours": "Mon-Fri 8am-5pm, Sat 9am-1pm, Closed Sun"
+        },
+        {
+            "name": "Riverfront Realty Group",
+            "address": "456 Elm Avenue, Parkersburg, WV",
+            "phone": "(304) 555-5678",
+            "website": "www.riverfrontrealtywv.com",
+            "logo": "riverfront",
+            "membership": "Gold",
+            "hours": "Mon-Sat 9am-6pm, Closed Sun"
+        },
+        {
+            "name": "Mountain Peaks Adventure Tours",
+            "address": "789 Oak Street, Parkersburg, WV",
+            "phone": "(304) 555-9012",
+            "website": "www.mountainpeaksadventures.com",
+            "logo": "mountain_peaks",
+            "membership": "Bronze",
+            "hours": "Mon-Sun 9am-7pm"
+        },
+        {
+            "name": "Golden Gate Restaurant",
+            "address": "1011 Maple Drive, Parkersburg, WV",
+            "phone": "(304) 555-3456",
+            "website": "www.goldengatewv.com",
+            "logo": "golden_gate",
+            "membership": "Non-Profit",
+            "hours": "Mon-Sat 11am-10pm, Sun 12pm-8pm"
+        },
+        {
+            "name": "TechLink Solutions",
+            "address": "1213 Pine Street, Parkersburg, WV",
+            "phone": "(304) 555-7890",
+            "website": "www.techlinkwv.com",
+            "logo": "tech_link",
+            "membership": "Gold",
+            "hours": "Mon-Fri 9am-6pm, Sat 10am-4pm, Closed Sun"
+        },
+        {
+            "name": "Harmony Music Academy",
+            "address": "1415 Cedar Avenue, Parkersburg, WV",
+            "phone": "(304) 555-2345",
+            "website": "www.harmonymusicwv.com",
+            "logo": "harmony_music",
+            "membership": "Silver",
+            "hours": "Mon-Fri 10am-8pm, Sat 9am-3pm, Closed Sun"
+        },
+        {
+            "name": "Parkersburg Pet Haven",
+            "address": "1617 Walnut Street, Parkersburg, WV",
+            "phone": "(304) 555-6789",
+            "website": "www.parkersburgpethaven.com",
+            "logo": "pet_haven",
+            "membership": "Bronze",
+            "hours": "Mon-Sat 10am-7pm, Sun 12pm-5pm"
+        }
+    ]
+}
