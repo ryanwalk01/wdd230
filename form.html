@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Form</title>
+    <meta name="author" content="Ryan Walker">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Ryan Walker - WDD 230 - Web Frontend Development" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1495660611116-fdd372baad4d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    <meta property="og:url" content="https://ryanwalk01.github.io/wdd230/" />
+    <meta property="twitter:title" content="Ryan Walker - WDD 230 - Web Frontend Development" />
+    <meta property="twitter:type" content="website" />
+    <meta property="twitter:image"
+        content="https://images.unsplash.com/photo-1495660611116-fdd372baad4d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    <meta property="twitter:url" content="https://ryanwalk01.github.io/wdd230/" />
+</head>
+
+<body>
+    <header>
+        <img id="profile" src="images/ryan.webp" alt="Photo of Ryan Walker">
+        <span>Ryan Walker</span>
+    </header>
+    <button type="button" aria-label="menu button" id="menu"></button>
+    <nav>
+        <a href="">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="week01/chamber-site-plan.html">Site Plan</a>
+        <a href="form.html" class="active">Form</a>
+    </nav>
+    <main>
+        <div id="formmessage"></div>
+        <form id="form" method="get" action="record.html">
+            <label>
+                Username:* <input type="text" id="username" name="username" required>
+            </label>
+            <label>
+                Password:* <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required>
+            </label>
+            <label>
+                Re-enter Password:* <input type="password" id="password2" name="password" pattern="[a-zA-Z0-9]{8,}"
+                    required>
+            </label>
+            <label>
+                Email:* <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                    title="Please enter a valid email address" required>
+            </label>
+            <label>
+                Page Rating: <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1"
+                    list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </label>
+            <div id="rangevalue">0</div>
+            <button type="submit"  id="submit">Sign Up</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> Ryan Walker USA</p>
+        <p id="lastModified"></p>
+        <button id="dark" type="button" aria-label="dark mode button"></button>
+    </footer>
+    <script src="scripts/getDates.js"></script>text
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/dark.js"></script>
+    <script src="scripts/formvalidation.js"></script>
+</body>
+
+</html>
