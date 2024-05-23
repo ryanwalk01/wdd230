@@ -21,11 +21,15 @@
 </head>
 
 <body>
+    <button id="closeBanner"></button>
+    <div id="banner">
+        <p>Come and join us for the Parkersburg Chamber of Commerce Meet & Greet on Wednesday at 7pm!</p>
+    </div>
     <header>
         <img src="images/header_logo.webp" alt="Parkersburg Chamber of Commerce logo">
         <button id="menu"></button>
         <nav class="nav">
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="discover.html">Discover</a>
             <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
@@ -37,10 +41,11 @@
     </section>
     <main>
         <section id="events">
-            <h2>Current events</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa error laborum asperiores facere voluptates
-                nam molestias vel? Dolore consequatur deserunt ipsa similique perspiciatis quas blanditiis ducimus, nemo
-                harum maiores? Aliquam?</p>
+            <h2>Current events:</h2>
+            <ul>
+                <li>5/11/24 - West Virginia Symphony @ BMS</li>
+                <li>5/20/24 - Barbershop Quartet @ Smoot Theatre</li>
+            </ul>
         </section>
         <section id="weather">
             <h3>Current Weather</h3>
@@ -49,6 +54,7 @@
             <h3>3 Day Forecast</h3>
             <div id="forecast"></div>
         </section>
+        <h2>Spotlight:</h2>
         <div id="spotlight"></div>
         <section id="cta">
             <h2>Become a part of the community!</h2>
@@ -77,6 +83,7 @@
             <p id="lastModified"></p>
         </div>
     </footer>
+    <script src="scripts/home.js"></script>
     <script src="scripts/chamber.js"></script>
 </body>
 
