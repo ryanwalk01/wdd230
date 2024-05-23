@@ -1,16 +1,96 @@
 {
     "weeks": [
         {
-            "week":"Week 1",
+            "week": "Week 1",
             "links": [
-        {
-            "url": "week01/holygrail.html",
-            "title": "HG Layout"
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "HG Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "media-query.html"
+                }
+            ]
         },
         {
-            "url": "week01/media-query.html",
-            "title": "media-query.html"
-        }
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "design.html"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "bom.html"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "https://codepen.io/Ryan-Walker-the-looper/pen/zYXbryQ",
+                    "title": "Hamburger Menu"
+                },
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "lazyload.html"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "responsive-images.html"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "bom.html"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/Ryan-Walker-the-bold/pen/xxNKrJb",
+                    "title": "Pseudo-Classes"
+                },
+                {
+                    "url": "week04/images/combinators.png",
+                    "title": "combinators_image"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "tablebuild.html"
+                },
+                {
+                    "url": "week04/webforms.html",
+                    "title": "webforms.html"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/Ryan-Walker-the-bold/pen/mdYJyOO",
+                    "title": "Pseudo-elements"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "prophets.html"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "weather.html"
+                }
             ]
         }
     ]

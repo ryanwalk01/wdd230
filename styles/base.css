@@ -122,12 +122,33 @@ footer {
     color: white;
 }
 
+/* Weather */
+#weather {
+    display: flex;
+    align-items: center;
+}
+
+#description {
+    margin-left: 5px;
+}
+
+#weather figure {
+    margin: 0px;
+}
+
 /* Links */
 #learning section {
     display: flex;
     align-items: center;
 }
 
-#learning p, a {
+#learning p {
+    margin: 5px;
+    flex-shrink: 0;
+}
+
+#learning a{
     padding: 0 5px;
+    margin: 5px;
+    /* flex-shrink: 1; */
 }
