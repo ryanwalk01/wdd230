@@ -1,6 +1,5 @@
-const baseURL = "http://127.0.0.1:65018/";
-// const linksURL = "https://ryanwalk01.github.io/wdd230/data/links.json"
-const linksURL = "http://127.0.0.1:65018/data/links.json";
+const baseURL = "https://ryanwalk01.github.io/wdd230/";
+const linksURL = "https://ryanwalk01.github.io/wdd230/data/links.json"
 const learningDiv = document.querySelector('#learning');
 
 async function getLinks() {
