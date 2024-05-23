@@ -121,3 +121,13 @@ footer {
     background-color: rgb(32, 32, 32);
     color: white;
 }
+
+/* Links */
+#learning section {
+    display: flex;
+    align-items: center;
+}
+
+#learning p, a {
+    padding: 0 5px;
+}

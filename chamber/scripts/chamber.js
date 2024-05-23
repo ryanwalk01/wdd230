@@ -10,21 +10,114 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
-let date = Date.now();
+//Weather
+const currentTemp = document.querySelector('#current-temp');
+const description = document.querySelector('#description');
+const forecast = document.querySelector('#forecast');
 
-if (localStorage.getItem('date')) {
-    let lastVisitTimestamp = parseInt(localStorage.getItem('date'));
-    let lastVisit = new Date(lastVisitTimestamp);
-    let currentDate = new Date();
-    let timeDifference = Math.floor((currentDate - lastVisit) / (1000 * 60 * 60 * 24));
+const dayUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=39.26&lon=-81.56&units=imperial&appid=87735150c2dde6d1d1dd1ff5ebc988f4';
+const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=39.26&lon=-81.56&units=imperial&appid=87735150c2dde6d1d1dd1ff5ebc988f4';
 
-    if (timeDifference == 0) {
-        document.querySelector('#visits').innerHTML = '<p>Back so soon! Awesome!</p>';
-    } else {
-        document.querySelector('#visits').innerHTML = `<p>You last visited ${timeDifference} days ago.</p>`;
+async function apiFetch() {
+    try {
+        const dayResponse = await fetch(dayUrl);
+        if (!dayResponse.ok) {
+            throw Error(await dayResponse.text());
+        }
+        const dayData = await dayResponse.json();
+
+        const forecastResponse = await fetch(forecastUrl);
+        if (!forecastResponse.ok) {
+            throw Error(await forecastResponse.text());
+        }
+        const forecastData = await forecastResponse.json();
+        console.log(forecastData)
+        displayResults(dayData, forecastData);
     }
-} else {
-    document.querySelector('#visits').innerHTML = '<p>Welcome! Let us know if you have any questions.</p>';
+    catch (error) {
+        console.log(error);
+    }
 }
 
-localStorage.setItem('date', date);
+function displayResults(dayData, forecastData) {
+
+    currentTemp.innerHTML = `Current Temperature: ${dayData.main.temp}°F`;
+    description.innerHTML = `| Description: ${(dayData.weather[0].description)}`;
+
+
+
+    const days = [forecastData.list[3], forecastData.list[11], forecastData.list[19]];
+
+    days.forEach(day => {
+        let card = document.createElement('section');
+        let date = document.createElement('h3');
+        let temp = document.createElement('p');
+
+        date.textContent = day.dt_txt.substr(5,5);
+        temp.textContent = `Temperature: ${day.main.temp}°F`;
+
+        card.appendChild(date);
+        card.appendChild(temp);
+        forecast.appendChild(card);
+    });
+}
+
+apiFetch();
+
+//Spotlight
+const spotlightCards = document.querySelector('#spotlight')
+const membersFile = "data/members.json";
+let spotlightList = [];
+
+fetch(membersFile)
+    .then(response => response.json())
+    .then(data => displaySpotlight(data.members));
+
+const displaySpotlight = (members) => {
+    members.forEach((member) => {
+        if (member.membership == "Silver" || member.membership == "Gold") {
+            spotlightList.push(member);
+        }
+    })
+    let spotlight1 = Math.floor(Math.random() * spotlightList.length);
+    let spotlight2;
+    let spotlight3;
+    do {
+        spotlight2 = Math.floor(Math.random() * spotlightList.length);
+        spotlight3 = Math.floor(Math.random() * spotlightList.length);
+    }
+    while (spotlight2 == spotlight1 || spotlight2 == spotlight3 || spotlight3 == spotlight1);
+
+    spotlights = [spotlight1, spotlight2, spotlight3];
+
+    spotlights.forEach((num) => {
+        let card = document.createElement('section');
+        let name = document.createElement('h2');
+        let address = document.createElement('p');
+        let phone = document.createElement('p');
+        let website = document.createElement('p');
+        let logo = document.createElement('img');
+        let hours = document.createElement('p');
+
+        name.textContent = `${members[num].name}`;
+        address.textContent = `Address: ${members[num].address}`;
+        phone.textContent = `Phone: ${members[num].phone}`;
+        website.textContent = `Website: ${members[num].website}`;
+        hours.textContent = `Business Hours: ${members[num].hours}`;
+
+        logo.setAttribute('src', `images/${members[num].logo}.webp`);
+        logo.setAttribute('alt', `logo of ${members[num].name}`);
+        logo.setAttribute('loading', 'lazy');
+        logo.setAttribute('width', '300');
+        logo.setAttribute('height', '300');
+
+        card.appendChild(logo);
+        card.appendChild(name);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(website);
+        card.appendChild(hours);
+        spotlightCards.appendChild(card);
+    })
+
+}
