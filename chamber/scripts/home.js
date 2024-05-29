@@ -22,7 +22,7 @@ async function apiFetch() {
         displayResults(dayData, forecastData);
     }
     catch (error) {
-        console.log(error);
+        // console.log(error);
     }
 }
 
